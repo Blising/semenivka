@@ -1,0 +1,34 @@
+/* Info.css */
+
+/* Фоновий стиль головної секції */
+main {
+    background-image: url('https://static.wixstatic.com/media/82e3fc_c37781798f4d41c380683f7ee5706320.jpg/v1/fill/w_1024,h_635,al_r,q_85,enc_auto/82e3fc_c37781798f4d41c380683f7ee5706320.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+}
+
+
+
+.nav-link.navmmmm {
+    
+    background-color: white;
+    color: #323232;
+    padding: 15px 25px;
+    margin: 0 5px;
+    border: 2px solid brown; /* Коричневий колір бордера */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px; /* Збільшення розміру тексту */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.navmmmm:hover {
+
+    background-color: #323232;
+    color: white;
+}
