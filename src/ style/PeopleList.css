@@ -1,0 +1,67 @@
+.person {
+    display: flex; /* Використовуємо flexbox для розташування елементів */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    margin-bottom: 10px; /* Відступ між кожним елементом списку */
+    position: relative; /* Додаємо відносне позиціонування для коректного позиціонування лінії */
+  }
+  
+  .person img {
+    width: 60px; /* Змінимо ширину картинки на 60 пікселів */
+    height: 60px; /* Змінимо висоту картинки на 60 пікселів */
+    margin-right: 10px; /* Збільшимо відступ праворуч від картинки */
+  }
+  
+  .person h2,
+  .person p {
+    margin: 0; /* Забираємо зовнішні відступи у заголовку та параграфі */
+  }
+  
+  .person h2 {
+    font-size: 18px; /* Збільшимо розмір шрифту для імені */
+  }
+  
+  .person::after {
+    content: ""; /* Додаємо після елементу порожній контент */
+    position: absolute; /* Відносне позиціонування відносно батьківського елементу */
+    bottom: 0; /* Розміщуємо лінію розділення внизу */
+    left: 0; /* Позиція лінії розділення по лівому краю */
+    width: 100%; /* Захоплюємо всю ширину батьківського елементу */
+    height: 1px; /* Товщина лінії розділення */
+    background-color: #ccc; /* Колір лінії розділення */
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination-buttons button {
+    background-color: rgb(26, 125, 255);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pagination-buttons button:hover {
+    background-color: rgb(20, 152, 228);
+  }
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-buttons button {
+    background-color: rgb(26, 125, 255);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: rgb(20, 152, 228);
+  }
+  

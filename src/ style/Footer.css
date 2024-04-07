@@ -4,6 +4,7 @@
 }
 
 .marquee {
+    border: 2px solid yellow;
     color: aliceblue;
     background-color: rgb(33, 121, 198);
     overflow: hidden;
