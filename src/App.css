@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 0px;
+  background-color: #D2D2D2;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.nav a {
+  font-size: xx-large;
+  text-decoration: none;
+  background-color: #629B7B;
+  border-radius: 60px 10px;
+  border: 1px solid #9EDC9B;
+  color: #f7f7f6;
+  text-align: center;
+  padding: 5px;
+  width: auto; /* Замінено на auto */
+  box-sizing: border-box;
+  margin: 0 5px; /* Додано простір між елементами */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Медіа-запит для екранів ширше за 600px (тобто не мобільні екрани) */
+@media only screen and (min-width: 600px) {
+  .nav {
+
+    justify-content: space-around; /* Замінено на space-around для рівномірного розташування */
+    background-color: #629B7B;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav a {
+    width: 20%; /* Змінено ширину елементів на 20%, щоб вони були розташовані поруч */
+    margin: 0; /* Знято відступ між елементами */
   }
+}
+
+/* Медіа-запит для мобільних екранів (менше 600px) */
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center; /* Центруємо елементи вертикально */
+  }
+
+  .nav a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+#root {
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+span {
+  font-size: 40px;
 }
