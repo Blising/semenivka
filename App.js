@@ -14,6 +14,7 @@ const Header = () => {
     <nav className="nav">
       <NavLink to="/" className="nav-link">Домашня сторінка</NavLink>
       <NavLink to="/info" className="nav-link">Школа</NavLink>
+
       <NavLink to="/map" className="nav-link">Мапа</NavLink>
       <NavLink to="/users" className="nav-link">Дошка Поваги</NavLink>
       
@@ -32,6 +33,7 @@ const App = () => {
           <Header />
           <Switch>
             <Route path="/" exact component={Home} />
+      
             <Route path="/info" component={Info} />
             <Route path="/map" component={Map} />
             <Route path="/users" component={Users} />

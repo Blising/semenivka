@@ -408,6 +408,8 @@ const updatedPeopleData = peopleData.map(person => ({
     };
   
     return (
+      <>
+
       <div className="people-list">
         {updatedPeopleData.slice(pageIndex * 10, pageIndex * 10 + 10).map((person, index) => (
           <div key={person.id} className="person">
@@ -417,14 +419,17 @@ const updatedPeopleData = peopleData.map(person => ({
             {(index !== 9 && index !== updatedPeopleData.slice(pageIndex * 10).length - 1) && <hr />} {/* Додаємо лінію розділення, якщо це не останній елемент */}
           </div>
         ))}
-        <div className="pagination-buttons">
-          <button style={{width:'250px', cursor:'pointer', height:'40px'}} onClick={prevPage}>Назад</button>
-          <button  style={{width:'250px', height:'40px', cursor:'pointer'}}  onClick={nextPage}>Вперед</button>
-          <a  href="http://kakhovka-rda.gov.ua/semenivska-silska-rada-2/" target="_blank" rel="noopener noreferrer">
-            <button style={{cursor:'pointer', width:'250px',height:'40px'}} >Більш детально</button>
-          </a>
-        </div>
+   
+        
+ 
+    
       </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+  <button style={{ width: '20%', marginLeft:'400px', backgroundColor: 'rgb(26, 125, 255)' }} onClick={nextPage}>Next</button>
+  <button style={{ width: '20%',  backgroundColor: 'rgb(20, 152, 228)' }} onClick={prevPage}>Prev</button>
+</div>
+
+      </>
     );
   };
   

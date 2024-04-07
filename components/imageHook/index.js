@@ -50,8 +50,8 @@ const CenteredImageSlider = () => {
 
             <div style={{ background: 'white' }}>
 
-                <div style={{ display: 'flex', justifyContent: 'center' }}>     <button onClick={prevImage} style={{ background: 'grey', width: '50px', height: '50px', marginTop: '150px', cursor:'pointer', color: 'white', borderRadius: "999px" }}>попередня</button>
-                    <img src={photos[currentPhotoIndex]} style={{ width: '500px', height: '400px' }} alt={`Photo ${currentPhotoIndex + 1}`} />      <button onClick={nextImage} style={{ cursor:'pointer', background: 'grey', width: '50px', color: 'white', borderRadius: "999px", height: '50px', marginTop: '150px' }}>наступна</button>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>     <button onClick={prevImage} style={{ background: 'grey', width: '50px', height: '50px', marginTop: '150px', cursor: 'pointer', color: 'white', borderRadius: "999px" }}>попередня</button>
+                    <img src={photos[currentPhotoIndex]} style={{ width: '500px', height: '400px' }} alt={`Photo ${currentPhotoIndex + 1}`} />      <button onClick={nextImage} style={{ cursor: 'pointer', background: 'grey', width: '50px', color: 'white', borderRadius: "999px", height: '50px', marginTop: '150px' }}>наступна</button>
 
                     <div />
 
@@ -59,29 +59,12 @@ const CenteredImageSlider = () => {
                     <div style={{ width: '400px', color: 'black', height: '330px', background: 'white' }}>
                         <h2 style={{ width: '300px', marginLeft: "25px", color: "white", marginRight: "30px", height: "120px", background: "#1E438F" }}>
                             <br />ВІТАЄМО У СЕМЕНІВСЬКОМУ ОЗЗСО</h2>
-                        <p style={{ marginLeft: '-50px' }}> З 1927 року і по сьогодні даємо
+                        <p style={{ justifyContent:'flex-start', marginLeft: '100px', fontSize:'xx-large' }}> З 1927 року <br/>
+                        і по сьогодні<br/> даємо
                             високоякісну освіту</p>
                         <br />
 
-                        <a href='https://semnvk.wixsite.com/semnvk/contact-us'>
-                            <button style={{ cursor:'pointer', marginLeft: "-50px", background: '#7AC9F9', width: '300px', color: "white", fontSize: "15px", padding: '10px', height: '50px', marginBottom: '10px' }}>
-                                МИ ВАС ЧЕКАЄМО
-                            </button></a>
-                        <br />
-                        <a href='https://youcontrol.com.ua/catalog/company_details/02146593/'>
-                            <button style={{ cursor:'pointer', marginLeft: "-50px", background: '#7AC9F9', fontSize: "15px", color: "white", width: '300px', padding: '10px', height: '50px', marginBottom: '10px' }}>
-                                РАЙОННИЙ ВІДДІЛ ОСВІТИ
-                            </button>
-                        </a>
-                        <br />
-
-                        <a href='https://www.facebook.com/khoda.gov.ua/?locale=uk_UA'>
-
-
-                            <button style={{cursor:'pointer', marginLeft: "-50px", background: '#7AC9F9', color: "white", fontSize: '15px', width: '300px', padding: '10px', height: '50px', marginBottom: '10px' }}>
-                                ХЕРСОНСЬКА ОДА
-                            </button>
-                        </a>
+                   
                     </div>
 
 
@@ -99,9 +82,9 @@ const CenteredImageSlider = () => {
 
                     <div style={{ marginLeft: '20px', border: "solid 2px blue" }}>
                         <a href='https://semnvk.wixsite.com/semnvk/post/21-%D0%BB%D1%8E%D1%82%D0%BE%D0%B3%D0%BE-%D0%BC%D1%96%D0%B6%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D1%80%D1%96%D0%B4%D0%BD%D0%BE%D1%97-%D0%BC%D0%BE%D0%B2%D0%B8'>
-                            <button style={{cursor:'pointer'}} onClick={() => handleVideoClick('https://semnvk.wixsite.com/semnvk/post/21-%D0%BB%D1%8E%D1%82%D0%BE%D0%B3%D0%BE-%D0%BC%D1%96%D0%B6%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D1%80%D1%96%D0%B4%D0%BD%D0%BE%D1%97-%D0%BC%D0%BE%D0%B2%D0%B8')}>
+
                                 <img style={{ width: '150px', height: "100px" }} src='https://static.wixstatic.com/media/82e3fc_217669616aa3420f9ef2073ec5926416f000.jpg/v1/fill/w_532,h_400,fp_0.50_0.50,q_90,enc_auto/82e3fc_217669616aa3420f9ef2073ec5926416f000.jpg' />
-                            </button>
+                       
                         </a>
                         <p>21 лютого - Міжнародний день рідної мови</p>
                     </div>
@@ -125,8 +108,8 @@ const CenteredImageSlider = () => {
                     <div style={{ border: "solid 2px blue ", marginRight: '20px' }}>
                         <a href='https://semnvk.wixsite.com/semnvk/post/16-%D0%BB%D1%8E%D1%82%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B5%D0%BD%D1%8C-%D1%94%D0%B4%D0%BD%D0%B0%D0%BD%D0%BD%D1%8F'>
 
-                            <button  style={{cursor:'pointer'}} onClick={() => handleVideoClick('https://semnvk.wixsite.com/semnvk/post/16-%D0%BB%D1%8E%D1%82%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B5%D0%BD%D1%8C-%D1%94%D0%B4%D0%BD%D0%B0%D0%BD%D0%BD%D1%8F')}>
-                                <img style={{ width: '150px', height: "100px" }} src='https://static.wixstatic.com/media/82e3fc_bd1e3a70f7c74608a6534676f59c41cd~mv2.jpg/v1/fill/w_265,h_150,fp_0.50_0.50,q_90,enc_auto/82e3fc_bd1e3a70f7c74608a6534676f59c41cd~mv2.jpg' /></button>
+                      
+                                <img style={{ width: '150px', height: "100px" }} src='https://static.wixstatic.com/media/82e3fc_bd1e3a70f7c74608a6534676f59c41cd~mv2.jpg/v1/fill/w_265,h_150,fp_0.50_0.50,q_90,enc_auto/82e3fc_bd1e3a70f7c74608a6534676f59c41cd~mv2.jpg' />
                         </a>
                         <p>16 лютого — День єднання</p>
                     </div>
@@ -134,7 +117,7 @@ const CenteredImageSlider = () => {
 
             </div>
 
-<h1 style={{background:'grey', width:'100%', height:'2px'}}> </h1>
+            <h1 style={{ background: 'grey', width: '100%', height: '2px' }}> </h1>
 
             <div style={{ background: "white", color: 'blue', height: '200px', width: '100%' }}>
                 <h3 style={{ marginLeft: '-800px', fontSize: '15px' }}>Наші відео </h3>
@@ -142,13 +125,11 @@ const CenteredImageSlider = () => {
 
                     <div style={{ width: '30%', borderLeft: "solid 2px blue", borderRight: "solid 2px blue" }}>
                         <a href='https://youtu.be/buC0UK3KQ_I?list=TLGGr6oexdEt7vEyNDAzMjAyNA'>
-                            <button style={{cursor:'pointer'}} onClick={() => handleVideoClick('https://youtu.be/buC0UK3KQ_I?list=TLGGr6oexdEt7vEyNDAzMjAyNA')}>
-                                <img style={{ width: '150px', height: "100px" }} src={imageKArina} />
-                            </button>
+
+                            <img style={{ width: '150px', height: "100px" }} src={imageKArina} />
+
                         </a>
-                        <p style={{ fontSize: '10px', textAlign: 'center', color: '#20387C', width: '90%', margin: 'auto' }}><h1 style={{ color: '#7F170D' }}>Оголошення!</h1><br /><br />
-                            З 26 січня по 04 лютого 2022 р. учні Семенівського ОЗЗСО (1-11 класи) навчатимуться дистанційно.
-                        </p>
+                  
                     </div>
 
                     <div style={{ width: '30%' }}>
@@ -160,11 +141,11 @@ const CenteredImageSlider = () => {
                     </div>
 
                     <div style={{ width: '30%', color: '#20387C', borderLeft: "solid 2px blue", borderRight: "solid 2px blue" }}>
-                        <p style={{ fontSize: '10px', textAlign: 'center', width: '90%', margin: 'auto' }}><h1 style={{ color: '#7F170D' }}>Увага!</h1><br />
-                            Педагогічним працівникам обов'язково пройти онлайн-модуль "Безпечна і дружня до дитини школа" (18 год) <br />за посиланням: http://scfs.multycourse.com.ua/ 13.01.2021 р.<br /><br /><h1 style={{ color: "#7F170D" }}>
-                                Оголошення!</h1>
+                        <p style={{ fontSize: 'max', textAlign: 'center', width: '90%', margin: 'auto' }}><h1 style={{ color: '#7F170D' }}>Увага!</h1><br />
+                            Педагогічним працівникам обов'язково пройти онлайн-модуль "Безпечна і дружня до дитини школа" (18 год) <br />за посиланням: http://scfs.multycourse.com.ua/ 13.01.2021 р.
+                          
                             Продовжується набір учнів до 1 класу Семенівського ОЗЗСО до 01 вересня 2022 р.
-                            Необхідні документи: Заява батьків та паспорт, Копія свідоцтва<br /> про народження, Оригінал медичної довідки, Документ, що підтверджує місце проживання.
+                            
                         </p>
                     </div>
                 </div>

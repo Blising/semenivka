@@ -8,7 +8,7 @@ export default class map extends Component {
       <>
         <div className="container">
           <div className="mapDiv">
-            map<MapComponents />
+            <MapComponents />
           </div>
         </div>
 

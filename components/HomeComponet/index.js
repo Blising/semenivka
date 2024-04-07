@@ -37,9 +37,9 @@ const HomeComponent = () => {
      
             <div style={{ width:"auto", border:"5px solid yellow", marginTop:"100px", height:"auto", background: 'white' }}>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <button onClick={prevImage} style={{ background: 'grey', width: '100px', height: '50px', marginTop: '150px', color: 'white', borderRadius: "999px" }}>Попередня</button>
+                    {/* <button onClick={prevImage} style={{ background: 'grey', width: '100px', height: '50px', marginTop: '150px', color: 'white', borderRadius: "999px" }}>Попередня</button> */}
                     <img src={photos[currentPhotoIndex]} style={{ width: '500px', height: '400px' }} alt={`Photo ${currentPhotoIndex + 1}`} />
-                    <button onClick={nextImage} style={{ background: 'grey', width: '100px', color: 'white', borderRadius: "999px", height: '50px', marginTop: '150px' }}>Наступна</button>
+                    {/* <button onClick={nextImage} style={{ background: 'grey', width: '100px', color: 'white', borderRadius: "999px", height: '50px', marginTop: '150px' }}>Наступна</button> */}
                 </div>
             </div>
             </div>
