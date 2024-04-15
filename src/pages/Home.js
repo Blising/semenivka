@@ -7,6 +7,7 @@ import WelcomComponent from '../components/Welcome';
 const HomePage = () => {
     return (
         <>
+        
 <WelcomComponent/>
 
 

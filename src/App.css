@@ -1,4 +1,6 @@
 .nav {
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   margin-top: 0px;

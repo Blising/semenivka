@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Footer from '../Footer';
+
 
 const HomeComponent = () => {
     const [photos, setPhotos] = useState([]);
